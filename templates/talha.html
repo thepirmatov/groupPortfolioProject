@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Portfolio Page</title>
+    <link rel="stylesheet" href="../styles/talha.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" role="navigation">
+        <div class="container">
+            <a class="navbar-brand" href="#home">
+                <img src="../images/talhalogo.jpg" alt="Talha Logo" style="height: 50px; vertical-align: middle; margin-right: 10px;">
+                
+            </a>
+            <div class="navbar-links">
+                <a href="#about" aria-label="About me">About</a>
+                <a href="#github" aria-label="My GitHub">GitHub</a>
+                <a href="#projects" aria-label="My Projects">Projects</a>
+                <a href="#contact" aria-label="Contact me">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Bio Section with Background -->
+    <section id="bio" class="main-banner" style="background-image: url('../images/talhapp.jpg'); background-size: cover; background-position: center;">
+        <div class="container">
+            <div class="bio-text">
+                <h1>Welcome to My Page</h1>
+                <p>Here is a little about myself.</p>
+                <p>Hello! I'm a final-year Software Engineering student at a North American university, passionate about creating and exploring the limitless possibilities in the world of technology. My journey in software development has been guided by a philosophy I hold dear, inspired by Socrates: "The only true wisdom is in knowing you know nothing." This mindset fuels my curiosity and drives my desire to continually learn and grow.
+
+                    Throughout my academic career, I've engaged in several exciting projects. One of my favorites was developing the NAU Cafe website, a collaborative effort that taught me the importance of teamwork and innovation in real-world applications. Additionally, I spearheaded the creation of a functioning product landing page dedicated to iconic football cleats, merging my passion for sports with my software development skills.
+                    
+                    When I'm not coding or buried in books, you can find me engaging in various activities that keep me energized and inspired. I'm an avid UFC fan, a football player, a weightlifter, and a book lover. These hobbies not only challenge me physically and mentally but also provide a well-rounded perspective that I bring into my professional work.
+                    
+                    I am eager to bring my hardworking spirit and fresh ideas into the tech industry as I approach graduation. If you're interested in learning more about my projects or discussing potential opportunities, please don't hesitate to reach out through the contact section..</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- GitHub Link -->
+    <section id="github" class="section lb">
+        <div class="container text-center">
+            <h2>My GitHub</h2>
+            <p>Check out my projects on github.</p>
+            <a href="https://github.com/tlha1903" target="_blank" class="btn btn-custom">Visit My GitHub</a>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section db" style="background-image: url('images/contact-background.jpg');">
+        <div class="container">
+            <div class="section-title text-left">
+                <h3>Contact Me</h3>
+                <p>Reach out for collaborations or just to say hello!</p>
+            </div>
+            <div class="contact_form">
+                <form>
+                    <label for="name">Your Name:</label>
+                    <input type="text" id="name" name="name" required>
+                    <label for="email">Your Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" required></textarea>
+                    <button type="submit" class="btn btn-custom">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>All Rights Reserved.<a href="#">Harun Talha Dinler</a> 
+        </div>
+    </footer>
+</body>
+</html>

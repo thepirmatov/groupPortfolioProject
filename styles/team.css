@@ -1,3 +1,15 @@
 header{
     align-items: center;
 }
+a{
+    text-decoration: none;
+}
+
+nav{
+    background-color: lightblue;
+    padding-left: 43%;
+    
+}
+main{
+    background-color: gray;
+}
