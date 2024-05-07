@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pierre Port-folio</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f7f7f7;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+        }
+
+        .container {
+            width: 80%;
+            margin: 0 auto;
+        }
+
+        h1 {
+            margin: 0;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        #media {
+            padding: 40px 0;
+        }
+
+        .media-item {
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        .media-item img {
+            border-radius: 5px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .media-item img:hover {
+            transform: scale(1.05);
+        }
+
+        .media-item p {
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <!-- Wrap h1 in an anchor tag with the home page URL -->
+            <h1><a href="index.html">Pierre Mangah</a></h1>
+            <nav>
+                <ul>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="media.html">Media</a></li>
+                    <li><a href="https://stephane234.github.io/resume.html/">Resume</a></li>
+                    
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="media">
+        <div class="container">
+            <div class="media-item">
+                <img src="./images/WhatsApp Image 2024-05-07 at 1.20.08 AM.jpeg" height="250" alt="Feature 1">
+                <p>Washington D.C. 2023</p>
+            </div>
+            <div class="media-item">
+                <img src="./images/WhatsApp Image 2024-05-07 at 1.21.43 AM (1).jpeg" height="250" alt="Feature 2">
+                <p>Florida, World Changers Conference</p>
+            </div>
+            <div class="media-item">
+                <img src="./images/WhatsApp Image 2024-05-07 at 1.21.43 AM.jpeg" height="250" alt="Feature 3">
+                <p>Christmas 2023 in Portland, Oregon</p>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

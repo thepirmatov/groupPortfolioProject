@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Pierre Port-folio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body style="position: relative; min-height: 100vh;">
+    <header>
+        <div class="container">
+            <!-- Wrap h1 in an anchor tag with the home page URL -->
+            <h1><a href="index.html">Pierre Mangah</a></h1>
+            <nav>
+                <ul>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="media.html">Media</a></li>
+                    <li><a href="https://stephane234.github.io/resume.html/">Resume</a></li>
+                    
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="contact-form" style="background-color: #f9f9f9; padding: 40px; border-radius: 10px;">
+        <div class="container">
+            
+            <p style="margin-bottom: 100px;">Have any questions? Fill out the form and I’ll get you a response soon!<br>
+            Feel free to ask/inquire about anything (school, internships, music, etc). <br/>Hoping to be a resource and be of help in your journey in any way possible.<br/>Similarly, please use this form or email directly me if your message regards a NIL opportunity.</p>
+            <p style="margin-bottom: 100px;">
+
+            <form action="comfirmationmsg.html" method="POST">
+                <label for="name" style="display: block; margin-bottom: 10px;">Name (required):</label>
+
+                <input type="text" id="name" name="name" required style="width: 100%; padding: 10px; margin-bottom: 20px; border-radius: 5px; border: 1px solid #ccc;">
+
+                <label for="email" style="display: block; margin-bottom: 10px;">Email (required):</label>
+
+                <input type="email" id="email" name="email" required style="width: 100%; padding: 10px; margin-bottom: 20px; border-radius: 5px; border: 1px solid #ccc;">
+
+                <label for="category" style="display: block; margin-bottom: 10px;">Which are you? (required):</label>
+
+                <select id="category" name="category" required style="width: 100%; padding: 10px; margin-bottom: 20px; border-radius: 5px; border: 1px solid #ccc;">
+
+                    <option value="Student">Student</option>
+                    <option value="Recruiter">Recruiter</option>
+                    <option value="Company (NIL)">Company (NIL)</option>
+                    <option value="Other">Other</option>
+                </select>
+
+                <label for="message" style="display: block; margin-bottom: 10px;">Message (required):</label>
+                <textarea id="message" name="message" required style="width: 100%; padding: 10px; margin-bottom: 20px; border-radius: 5px; border: 1px solid #ccc;"></textarea>
+                <button type="submit" style="background-color: #333; color: #fff; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer;">Send</button>
+            </form>
+        </div>
+    </section>
+
+    <footer id="contact">
+        <div class="container">
+            <p>Email: pmangah@na.edu</p>
+            <p>Phone: 3468599497</p>
+        </div>
+    </footer>
+</body>
+</html>
