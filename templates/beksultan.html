@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beksultan</title>
+    <link rel="stylesheet" href="../styles/beksultan.css">
+    <script>
+        const navLinks = document.querySelectorAll('nav a');
+
+        function smoothScroll(event) {
+        event.preventDefault();
+
+        const targetSection = event.target.getAttribute('href');
+
+        const targetElement = document.querySelector(targetSection);
+
+        targetElement.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+        });
+
+        updateActiveLink(targetSection);
+        }
+
+        function updateActiveLink(targetSection) {
+        navLinks.forEach(link => {
+            link.classList.remove('active');
+            if (link.getAttribute('href') === targetSection) {
+            link.classList.add('active');
+            }
+        });
+        }
+
+        navLinks.forEach(link => link.addEventListener('click', smoothScroll));
+
+    </script>
+</head>
+<body>
+
+    <div class="terminal-container">
+        <header>
+            <a href="./team.html">Team</a>
+    
+            <nav>
+                <a href="#about">About</a>
+                <a href="#githubAndLinkedIn">GitHub & LinkedIn</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </header>
+    
+        <main>
+            <section id="about">
+                <p class="typing">I am Beksultan Pirmatov. I am an international student at NAU.<br>
+                <strong>Coding Languages:</strong> Java, C, Python, C#, and some JavaScript.<br>
+                <strong>Frameworks: </strong> Flask and Apache Maven.<br>
+                <strong>Job Experience:</strong> around 8 months intership (Hoptub).<br>
+                <strong>Major:</strong> Software Engineering.<br>
+                <strong>Current Projects:</strong> Learning to how to train NLP and building a website that uses OpenAI's Whisper to generate transcription of audio or video files.
+                </p>
+            </section>
+            <section id="githubAndLinkedIn">
+                <div id="github">
+                    <a href="https://github.com/thepirmatov" target="_blank">
+                        <img src="../images/GitHub_Logo_White.png" alt="GitHub logo">
+                    </a>
+                </div>
+                <div id="linkedin">
+                    <a href="www.linkedin.com/in/beksultan-pirmatov-0b9b88226" target="_blank">
+                        <img src="../images/LinkedIn-Blue-14@2x.png" alt="LinkedIn logo">
+                    </a>
+                </div>
+            </section>
+            <section id="projects">
+                <h2>Projects</h2>
+                <a href="https://github.com/thepirmatov/Projects">
+                    <img src="../images/beksultanGithub.png" alt="">
+                </a>
+                <p>Check out my projects on GitHub! I've been working on various projects...</p>
+            </section>
+            <section id="contact">
+                <div>
+                    <h2>Email</h2>
+                    <a href="mailto:bpirmatov@na.edu">bpirmatov@na.edu</a>
+                </div>
+                
+                <div>
+                    <h2>Phone</h2>
+                    <a href="tel:+15555555555">555-555-5555</a>
+                </div>
+                
+            </section>
+        </main>
+    </div>
+
+    <script>
+        const paragraphs = document.querySelectorAll('.typing');
+
+        paragraphs.forEach((paragraph) => {
+        const text = paragraph.textContent.trim(); 
+        let charIndex = 0;
+
+        const typeWriter = setInterval(() => {
+            if (charIndex === text.length) {
+            clearInterval(typeWriter); 
+            return;
+            }
+
+            const char = text[charIndex];
+            paragraph.textContent = text.substring(0, charIndex + 1);
+            charIndex++;
+        }, 25);
+        });
+    </script>
+</body>
+</html>

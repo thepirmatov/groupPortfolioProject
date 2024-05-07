@@ -1,0 +1,154 @@
+body {
+    margin: 0;
+    display: flex;
+    min-height: 100vh; 
+}
+  
+main {
+    flex: 1;
+}
+
+a{
+    text-decoration: none;
+}
+a:visited{
+    color: inherit;
+}
+
+.terminal-container{
+    background-color: #000;
+    color: #0f0;
+    width: 100%;
+    min-height: 60vh;
+    font-family: 'Courier New', monospace; 
+    margin: 0 auto;
+    padding: 1em;
+    border-radius: 5px;
+    overflow-y: scroll;
+}
+
+section {
+    height: 100vh;
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+}
+
+nav{
+    float: right;
+}
+
+.typing {
+    font-size: large;
+    align-items: center;
+}
+  
+.typing span {  
+    display: inline-block;  
+    opacity: 0;
+    transition: opacity 0.1s ease-in-out;
+}
+
+.typing span.active {
+    opacity: 1;
+}
+
+
+@keyframes blink {
+    from, to { opacity: 1; }
+    50% { opacity: 0; } /* Hide character for blinking effect */
+}
+
+#githubAndLinkedIn {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20%;
+}
+  
+#github, #linkedin {
+    text-align: center;
+}
+  
+#github a, #linkedin a {
+    text-decoration: none;
+    color: inherit;
+    transition: all 0.2s ease-in-out;
+    position: relative;
+}
+
+#github a:hover img, #linkedin a:hover img {
+    color: #007bff;
+    opacity: .5;
+    transform: translateX(5px);
+    transition: transform 0.2s ease-in-out;
+}
+  
+#github img, #linkedin img {
+    width: 300px;
+    height: 80px;
+}
+
+#projects{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+
+    h2{
+        position: absolute;
+        top: 0;
+        left: 0;
+        margin-top: 5%;
+        font-size: 1.2rem;
+        font-weight: bold;
+        background-color: rgba(0, 0, 0, 0.5);
+        padding: 0.5rem; 
+    }
+    img{
+        width: 90%;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+    }
+    p{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        margin-bottom: 5%;
+        font-size: 1rem;
+        padding: 0.5rem; 
+    }
+}
+
+#projects a:hover img {
+    opacity: .5;
+}
+
+#contact{
+    position: relative;
+    align-items: center;
+    div{
+        margin: 0 5%;
+    }
+}
+
+@media (max-width: 768px) and (orientation: portrait) {
+    #github img, #linkedin img {
+        width: 150px;
+        height: 50px;
+    }
+    #githubAndLinkedIn{
+        align-items: center;
+    }
+
+    #projects{
+        h2{
+            margin: 0;
+        }
+        img{
+            align-items: center;
+            margin: 0 5%;
+        }
+    }
+
+}
